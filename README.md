@@ -76,3 +76,14 @@ catch (Exception $e)
     exit(1);
 }
 ```
+
+## How does it work
+
+Script working by creating new files, where all the elements are the same as in the main file, except for the <item> elements.
+
+<item> element is used for every post, page or other content type in wordpress blog, but not comments. Comments are inside of <item> element.
+
+So, it is possible that your large WXR xml file has just single <item> with a signle post and thousands of comments (for example, if its a non approved, but not deleted SPAM coments),
+and in this case file cannot be splitted.
+
+Also, splitted files are always slightli bigger than the size, that you specify, because it compines <item>s while the needed size is achieved, and then, goes to next file.
