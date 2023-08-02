@@ -1,4 +1,4 @@
-# WXR-XML-Splitter-php
+# Tool to split large Wordpress WXR files
 Wordpress WXR XML Splitter on php
 
 Wordpress exported WXR files are usually quite large, and cannot be imported into wordpress installation, due to **memory_limit**, **max_execution_time**, **upload_max_filesize**, **post_max_size** and other server limitation.
